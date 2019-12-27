@@ -1,0 +1,287 @@
+/*网页的全局样式 解决兼容问题*/
+@import '~antd/dist/antd.css';
+body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,tr,td,form,input,select,textarea,span,img,a,em,strong,*{ margin:0; padding:0;}
+body{ font-family:"宋体"; font-size:12px; color:#000000;}
+ul,ol,li{ list-style:none;}
+h1,h2,h3,h4,h5,h6{ font-size:14px;}
+input,select,textarea{ vertical-align:middle;}
+img{ border:none; vertical-align:middle;}
+a{ text-decoration:none; color:#333333;}
+a:hover{ color:#009999;}
+.clear{ clear:both; height:0px; width:0px; overflow:hidden;}
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+
+html,body{
+    .full(100%,100%,none);
+}
+#root{
+    .full(100%,100%,none);
+}
+.app{
+    .full(100%,100%,none);
+
+    .home{
+        .full(100%,100%,none);
+        overflow-y: auto;
+        .top{
+            .full(100%,0.8rem,#ffcb00);
+            display: flex;
+
+            .t1{
+                .full(1.3rem,100%,none);
+                text-align: center;
+                line-height: 0.8rem;
+
+            }
+            .t2{
+                .full(none,100%,none);
+                flex: 1;
+                padding: 0.15rem; box-sizing: border-box;
+                input{
+                    .full(100%,100%,white);
+                    border: 1px solid #ccc;
+                    border-radius: 0.1rem;
+                    text-indent: 0.2rem;
+                }
+            }
+            .t3{
+                .full(0.8rem,100%,none);
+                text-align: center;
+                line-height: 0.8rem;
+                font-size: 0.35rem;
+            }
+        }
+        .cen{
+            .full(100%,auto,none);
+            .centop{
+                .full(100%,0.8rem,#000000);
+                display: flex;
+
+                .ct1{
+                    .full(0.8rem,100%,none);
+                    padding: 0.1rem; box-sizing: border-box;
+                    .logo{
+                        .full(100%,100%,#ffbf00);
+                        border-radius: 0.1rem;
+                        text-align: center;
+                        line-height: 0.6rem;
+                        font-weight: 700;
+
+                    }
+                }
+                .ct2{
+                    .full(none,100%,none);
+                    flex: 1;
+                   
+                    padding: 0 0.2rem; 
+                    padding-top: 0.1rem; box-sizing: border-box;
+                    p{
+                        line-height: 0.3rem;
+                        color: white;
+                    }
+                }
+                .ct3{
+                    .full(1.2rem,100%,none);
+                    padding: 0.15rem 0.1rem; box-sizing: border-box;
+                    .but{
+                        .full(100%,100%,#ffbf00);
+                        border-radius: 0.1rem;
+                        text-align: center;
+                        line-height: 0.5rem;
+                        font-weight: 700;
+                    }
+
+                }
+            }
+
+            .dls{
+                .full(100%,3rem,white);
+
+                dl{
+                    .full(20%,1.5rem,none);
+                    padding: 0.1rem; box-sizing: border-box;
+                    float: left;
+                    dt{
+                        padding: 0.1rem; box-sizing: border-box;
+                        img{
+                            .full(100%,auto,none);
+                        }
+                    }
+                    dd{
+                        text-align: center;
+                        line-height: 0.2rem;
+                    }
+                }
+            }
+
+            .boxs{
+                .full(100%,auto,none);
+                    padding: 0.2rem; box-sizing: border-box;
+                .boxname{
+                    .full(100%,0.8rem,none);
+                    line-height: 0.8rem;
+                    font-size: 0.25rem;
+
+                }
+                dl{
+                    .full(100%,1.7rem,none);
+                    display: flex;
+                    margin-bottom: 0.2rem;
+                    dt{
+                        .full(1.7rem,100%,none);
+                    }
+                    dd{
+                        .full(none,100%,none);
+                        padding: 0 0.2rem; box-sizing: border-box;
+                        color: #666666;
+                        flex: 1;
+                        .p1{
+                            line-height: 0.4rem;
+                            font-size: 0.25rem;
+                        }
+                        .p2{
+                            line-height: 0.4rem;
+                        }
+                        .p3{
+                            line-height: 0.4rem;
+                            margin-top: 0.3rem;
+                            .money{
+                                color: #ff6804;
+                                .m{
+                                    font-size: 0.27rem;
+                                }
+                            }
+                            .sho{
+                                float: right;
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+    }
+    .login{
+        .full(100%,100%,none);
+    }
+    .xiang{
+        .full(100%,100%,#f0f0f0);
+        
+        .top{
+            .full(100%,0.8rem,none);
+            display: flex;
+            position: fixed; top: 0;
+            .t1{
+                .full(0.8rem,100%,none);
+                text-align: center;
+                line-height: 0.8rem;
+                font-size: 0.35rem;
+                color: white;
+            }
+            .t2{
+                .full(none,100%,none);
+                flex: 1;
+                padding: 0.15rem; box-sizing: border-box;
+                input{
+                    .full(100%,100%,white);
+                    border-radius: 1rem;
+                    border: none;
+                    text-indent: 0.2rem;
+
+                }
+            }
+            .t3{
+                .full(0.8rem,100%,none);
+                text-align: center;
+                line-height: 0.8rem;
+                color: white;
+                font-size: 0.35rem;
+            }
+        }
+        .cen{
+            .full(100%,100%,none);
+            overflow-y: auto;
+            .centop{
+                .full(100%,2rem,none);
+                background: url('//s1.meituan.net/bs/file?f=meis/meishi.mobile:img/app_download_banner.png@5b5269e');
+                background-size: 100% 100%;
+            }
+
+            .dls{
+                .full(100%,3.5rem,white);
+
+                dl{
+                    .full(25%,1.5rem,none);
+                    padding: 0.1rem; box-sizing: border-box;
+                    float: left;
+                    dt{
+                        padding: 0.3rem; box-sizing: border-box;
+                        img{
+                            .full(100%,auto,none);
+                        }
+                    }
+                    dd{
+                        text-align: center;
+                        line-height: 0.2rem;
+                    }
+                }
+            }
+
+            .boxs{
+                .full(100%,auto,white);
+                margin-top: 0.2rem;
+                .boxtop{
+                    .full(100%,0.8rem,none);
+                    ul{
+                        .full(100%,100%,none);
+                        display: flex;
+                        li{
+                            .full(none,100%,none);
+                            flex: 1;
+                            text-align: center;
+                            line-height: 0.8rem;
+                           
+
+                        }
+                    }
+                }
+
+                dl{
+                    .full(100%,2rem,none);
+                    display: flex;
+                    padding: 0.2rem; box-sizing: border-box;
+                    dt{
+                        .full(2rem,100%,none);
+                    }
+                    dd{
+                        .full(none,100%,none);
+                        flex: 1;
+                        padding: 0.2rem; box-sizing: border-box;
+                        .p1{
+                            font-size: 0.25rem;
+                        }
+                        .p2{
+                            .ju{
+                                float: right;
+                            }
+                        }
+                        .p3{}
+                        .p4{
+                            .zhichi{
+                                color: #77bfb8;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

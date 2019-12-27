@@ -1,0 +1,415 @@
+@import '~antd/dist/antd.css';
+/*网页的全局样式 解决兼容问题*/
+body,
+div,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+tr,
+td,
+form,
+input,
+select,
+textarea,
+span,
+img,
+a,
+em,
+strong,
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "宋体";
+  font-size: 12px;
+  color: #000000;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 14px;
+}
+input,
+select,
+textarea {
+  vertical-align: middle;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+  color: #333333;
+}
+a:hover {
+  color: #009999;
+}
+.clear {
+  clear: both;
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+#root {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.app {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.app .home {
+  width: 100%;
+  height: 100%;
+  background: none;
+  overflow-y: auto;
+}
+.app .home .top {
+  width: 100%;
+  height: 0.8rem;
+  background: #ffcb00;
+  display: flex;
+}
+.app .home .top .t1 {
+  width: 1.3rem;
+  height: 100%;
+  background: none;
+  text-align: center;
+  line-height: 0.8rem;
+}
+.app .home .top .t2 {
+  width: none;
+  height: 100%;
+  background: none;
+  flex: 1;
+  padding: 0.15rem;
+  box-sizing: border-box;
+}
+.app .home .top .t2 input {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 0.1rem;
+  text-indent: 0.2rem;
+}
+.app .home .top .t3 {
+  width: 0.8rem;
+  height: 100%;
+  background: none;
+  text-align: center;
+  line-height: 0.8rem;
+  font-size: 0.35rem;
+}
+.app .home .cen {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.app .home .cen .centop {
+  width: 100%;
+  height: 0.8rem;
+  background: #000000;
+  display: flex;
+}
+.app .home .cen .centop .ct1 {
+  width: 0.8rem;
+  height: 100%;
+  background: none;
+  padding: 0.1rem;
+  box-sizing: border-box;
+}
+.app .home .cen .centop .ct1 .logo {
+  width: 100%;
+  height: 100%;
+  background: #ffbf00;
+  border-radius: 0.1rem;
+  text-align: center;
+  line-height: 0.6rem;
+  font-weight: 700;
+}
+.app .home .cen .centop .ct2 {
+  width: none;
+  height: 100%;
+  background: none;
+  flex: 1;
+  padding: 0 0.2rem;
+  padding-top: 0.1rem;
+  box-sizing: border-box;
+}
+.app .home .cen .centop .ct2 p {
+  line-height: 0.3rem;
+  color: white;
+}
+.app .home .cen .centop .ct3 {
+  width: 1.2rem;
+  height: 100%;
+  background: none;
+  padding: 0.15rem 0.1rem;
+  box-sizing: border-box;
+}
+.app .home .cen .centop .ct3 .but {
+  width: 100%;
+  height: 100%;
+  background: #ffbf00;
+  border-radius: 0.1rem;
+  text-align: center;
+  line-height: 0.5rem;
+  font-weight: 700;
+}
+.app .home .cen .dls {
+  width: 100%;
+  height: 3rem;
+  background: #ffffff;
+}
+.app .home .cen .dls dl {
+  width: 20%;
+  height: 1.5rem;
+  background: none;
+  padding: 0.1rem;
+  box-sizing: border-box;
+  float: left;
+}
+.app .home .cen .dls dl dt {
+  padding: 0.1rem;
+  box-sizing: border-box;
+}
+.app .home .cen .dls dl dt img {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.app .home .cen .dls dl dd {
+  text-align: center;
+  line-height: 0.2rem;
+}
+.app .home .cen .boxs {
+  width: 100%;
+  height: auto;
+  background: none;
+  padding: 0.2rem;
+  box-sizing: border-box;
+}
+.app .home .cen .boxs .boxname {
+  width: 100%;
+  height: 0.8rem;
+  background: none;
+  line-height: 0.8rem;
+  font-size: 0.25rem;
+}
+.app .home .cen .boxs dl {
+  width: 100%;
+  height: 1.7rem;
+  background: none;
+  display: flex;
+  margin-bottom: 0.2rem;
+}
+.app .home .cen .boxs dl dt {
+  width: 1.7rem;
+  height: 100%;
+  background: none;
+}
+.app .home .cen .boxs dl dd {
+  width: none;
+  height: 100%;
+  background: none;
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+  color: #666666;
+  flex: 1;
+}
+.app .home .cen .boxs dl dd .p1 {
+  line-height: 0.4rem;
+  font-size: 0.25rem;
+}
+.app .home .cen .boxs dl dd .p2 {
+  line-height: 0.4rem;
+}
+.app .home .cen .boxs dl dd .p3 {
+  line-height: 0.4rem;
+  margin-top: 0.3rem;
+}
+.app .home .cen .boxs dl dd .p3 .money {
+  color: #ff6804;
+}
+.app .home .cen .boxs dl dd .p3 .money .m {
+  font-size: 0.27rem;
+}
+.app .home .cen .boxs dl dd .p3 .sho {
+  float: right;
+}
+.app .login {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.app .xiang {
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+}
+.app .xiang .top {
+  width: 100%;
+  height: 0.8rem;
+  background: none;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+.app .xiang .top .t1 {
+  width: 0.8rem;
+  height: 100%;
+  background: none;
+  text-align: center;
+  line-height: 0.8rem;
+  font-size: 0.35rem;
+  color: white;
+}
+.app .xiang .top .t2 {
+  width: none;
+  height: 100%;
+  background: none;
+  flex: 1;
+  padding: 0.15rem;
+  box-sizing: border-box;
+}
+.app .xiang .top .t2 input {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 1rem;
+  border: none;
+  text-indent: 0.2rem;
+}
+.app .xiang .top .t3 {
+  width: 0.8rem;
+  height: 100%;
+  background: none;
+  text-align: center;
+  line-height: 0.8rem;
+  color: white;
+  font-size: 0.35rem;
+}
+.app .xiang .cen {
+  width: 100%;
+  height: 100%;
+  background: none;
+  overflow-y: auto;
+}
+.app .xiang .cen .centop {
+  width: 100%;
+  height: 2rem;
+  background: none;
+  background: url('//s1.meituan.net/bs/file?f=meis/meishi.mobile:img/app_download_banner.png@5b5269e');
+  background-size: 100% 100%;
+}
+.app .xiang .cen .dls {
+  width: 100%;
+  height: 3.5rem;
+  background: #ffffff;
+}
+.app .xiang .cen .dls dl {
+  width: 25%;
+  height: 1.5rem;
+  background: none;
+  padding: 0.1rem;
+  box-sizing: border-box;
+  float: left;
+}
+.app .xiang .cen .dls dl dt {
+  padding: 0.3rem;
+  box-sizing: border-box;
+}
+.app .xiang .cen .dls dl dt img {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.app .xiang .cen .dls dl dd {
+  text-align: center;
+  line-height: 0.2rem;
+}
+.app .xiang .cen .boxs {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  margin-top: 0.2rem;
+}
+.app .xiang .cen .boxs .boxtop {
+  width: 100%;
+  height: 0.8rem;
+  background: none;
+}
+.app .xiang .cen .boxs .boxtop ul {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: flex;
+}
+.app .xiang .cen .boxs .boxtop ul li {
+  width: none;
+  height: 100%;
+  background: none;
+  flex: 1;
+  text-align: center;
+  line-height: 0.8rem;
+}
+.app .xiang .cen .boxs dl {
+  width: 100%;
+  height: 2rem;
+  background: none;
+  display: flex;
+  padding: 0.2rem;
+  box-sizing: border-box;
+}
+.app .xiang .cen .boxs dl dt {
+  width: 2rem;
+  height: 100%;
+  background: none;
+}
+.app .xiang .cen .boxs dl dd {
+  width: none;
+  height: 100%;
+  background: none;
+  flex: 1;
+  padding: 0.2rem;
+  box-sizing: border-box;
+}
+.app .xiang .cen .boxs dl dd .p1 {
+  font-size: 0.25rem;
+}
+.app .xiang .cen .boxs dl dd .p2 .ju {
+  float: right;
+}
+.app .xiang .cen .boxs dl dd .p4 .zhichi {
+  color: #77bfb8;
+}
